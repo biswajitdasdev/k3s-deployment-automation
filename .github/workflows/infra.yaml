@@ -43,7 +43,7 @@ jobs:
 
 
       - name: Pulumi stack select
-        run: pulumi stack select org/aws-k3s/dev --cwd Infra
+        run: pulumi stack select biswajitdas/aws-k3s/dev --cwd Infra
 
       - name: Pulumi refresh
         run: pulumi refresh --yes --cwd Infra
