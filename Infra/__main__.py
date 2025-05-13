@@ -149,6 +149,7 @@ master_instance = ec2.Instance(
     }
 )
 
+# Create worker instance 1
 worker_instance_1 = ec2.Instance('worker-instance-1',
     instance_type=instance_type,
     ami=ami,
