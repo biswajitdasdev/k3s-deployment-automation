@@ -27,7 +27,7 @@ jobs:
         run: pulumi login
 
       - name: Pulumi stack select
-        run: pulumi stack select <YOUR_STACK_NAME> --cwd Infra
+        run: pulumi stack select biswajitdas/aws-k3s/dev --cwd Infra
 
       - name: Pulumi refresh
         run: pulumi refresh --yes --cwd Infra
